@@ -17,7 +17,7 @@ body {
   display: inline-block;
   float: none;
 }
-.navbar-toggle {
+#left-collapse-btn {
   position: absolute;
   float: left;
   margin-left: 15px;
@@ -28,7 +28,7 @@ body {
 }
 
 @media (min-width: 1px) {
-  .navbar-toggle {
+  #left-collapse-btn {
     display: block !important;
   }
 }
@@ -40,7 +40,7 @@ body {
   .navmenu {
     padding-top: 0;
   }
-  .navbar {
+  #left-collapse-menu {
     display: none !important; /* IE8 fix */
   }
 }

@@ -7,52 +7,255 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
   <link href="css/navmenu.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 </head>
 <body>
-  <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
-      <a class="navmenu-brand visible-md visible-lg" href="#">Project name</a>
+  <div class="container-fluid">
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+      <a class="navmenu-brand visible-md visible-lg" href="#"><img src="images/logo.png" alt="logo" title="logo" /> Dianlike</a>
       <ul class="nav navmenu-nav">
-        <li class="active"><a href="./">Slide in</a></li>
-        <li><a href="../navmenu-push/">Push</a></li>
-        <li><a href="../navmenu-reveal/">Reveal</a></li>
-        <li><a href="../navbar-offcanvas/">Off canvas navbar</a></li>
-      </ul>
-      <ul class="nav navmenu-nav">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu navmenu-nav">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
-            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
             <li><a href="#">Separated link</a></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
       </ul>
+      <hr>
+      <ul class="nav navmenu-nav">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
     </div>
 
-    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
-      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg" id="left-collapse-menu">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" id="left-collapse-btn">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Project name</a>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" title="logo" /> Dianlike</a>
     </div>
 
     <div class="container">
       <div class="page-header">
-        <h1>Navmenu Template</h1>
+        <h1 id="jasny-bootstrap">Product Upload</h1>
       </div>
-      <p class="lead">This example shows the navmenu element. If the viewport is <b>less than 992px</b> the menu will be placed the off canvas and will be shown with a slide in effect.</p>
-      <p>Also take a look at the examples for a navmenu with <a href="../navmenu-push">push effect</a> and <a href="../navmenu-reveal">reveal effect</a>.</p>
-    </div><!-- /.container -->
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jasny-bootstrap.min.js"></script>
-</body>
-</html>
+      <div class="col-md-3">
+        <div class="input-group">
+          <input class="form-control" type="email" placeholder="Enter product name">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search"></i></button>
+          </span>
+        </div>
+        <hr>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                </span>Content</a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="list-group">
+                <a href="#" class="list-group-item">Cras justo odio</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
+                </span>Content</a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="list-group">
+                <a href="#" class="list-group-item">Cras justo odio</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><span class="glyphicon glyphicon-heart">
+                </span>Content</a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+              <div class="list-group">
+                <a href="#" class="list-group-item">Cras justo odio</a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="list-group" id="product-list">
+          <a href="#product-item" class="list-group-item col-md-3 col-sm-4 col-xs-6">
+            <div class="input-group check-status-wrap"><i class="glyphicon glyphicon-ok check-status"></i></div>
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/product.jpg" alt="product" />
+            </div>
+            <p>Dapibus ac facilisis in</p>
+            <div class="input-group">
+              <span class="input-group-addon">Price $</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </a>
+          <a href="#product-item" class="list-group-item col-md-3 col-sm-4 col-xs-6">
+            <div class="input-group check-status-wrap"><i class="glyphicon glyphicon-ok check-status"></i></div>
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/product.jpg" alt="product" />
+            </div>
+            <p>Dapibus ac facilisis in</p>
+            <div class="input-group">
+              <span class="input-group-addon">Price $</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </a>
+          <a href="#product-item" class="list-group-item col-md-3 col-sm-4 col-xs-6">
+            <div class="input-group check-status-wrap"><i class="glyphicon glyphicon-ok check-status"></i></div>
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/product.jpg" alt="product" />
+            </div>
+            <p>Dapibus ac facilisis in</p>
+            <div class="input-group">
+              <span class="input-group-addon">Price $</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </a>
+          <a href="#product-item" class="list-group-item col-md-3 col-sm-4 col-xs-6">
+            <div class="input-group check-status-wrap"><i class="glyphicon glyphicon-ok check-status"></i></div>
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/product.jpg" alt="product" />
+            </div>
+            <p>Dapibus ac facilisis in</p>
+            <div class="input-group">
+              <span class="input-group-addon">Price $</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </a>
+          <a href="#product-item" class="list-group-item col-md-3 col-sm-4 col-xs-6">
+            <div class="input-group check-status-wrap"><i class="glyphicon glyphicon-ok check-status"></i></div>
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/product.jpg" alt="product" />
+            </div>
+            <p>Dapibus ac facilisis in</p>
+            <div class="input-group">
+              <span class="input-group-addon">Price $</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </a>
+          <a href="#product-item" class="list-group-item col-md-3 col-sm-4 col-xs-6">
+            <div class="input-group check-status-wrap"><i class="glyphicon glyphicon-ok check-status"></i></div>
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/product.jpg" alt="product" />
+            </div>
+            <p>Dapibus ac facilisis in</p>
+            <div class="input-group">
+              <span class="input-group-addon">Price $</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </a>
+          <a href="#product-item" class="list-group-item col-md-3 col-sm-4 col-xs-6">
+            <div class="input-group check-status-wrap"><i class="glyphicon glyphicon-ok check-status"></i></div>
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/product.jpg" alt="product" />
+            </div>
+            <p>Dapibus ac facilisis in</p>
+            <div class="input-group">
+              <span class="input-group-addon">Price $</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </a>
+          <a href="#product-item" class="list-group-item col-md-3 col-sm-4 col-xs-6">
+            <div class="input-group check-status-wrap"><i class="glyphicon glyphicon-ok check-status"></i></div>
+            <div class="thumbnail">
+              <img data-src="holder.js/300x300" src="images/product.jpg" alt="product" />
+            </div>
+            <p>Dapibus ac facilisis in</p>
+            <div class="input-group">
+              <span class="input-group-addon">Price $</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="pager">
+              <li class="previous"><a href="#">&larr; Older</a></li>
+              <li class="next"><a href="#">Newer &rarr;</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="alert alert-success alert-fixed-bottom" role="alert">
+          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <strong>Success!</strong> Your action has been completed succefully.
+        </div>
+      </div><!-- /.container -->
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+  </html>
